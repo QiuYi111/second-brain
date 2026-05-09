@@ -91,18 +91,22 @@ Each entry in `wiki/log.md`:
 
 ## Page Naming
 
-Filenames use **kebab-case** with `.md` extension. Page titles inside the file use **Title Case**.
+Filenames match the page title exactly — **Title Case** with `.md` extension. This ensures `[[wikilinks]]` resolve correctly in Obsidian.
 
-- Source pages: `wiki/sources/article-title-here.md` → `# Article Title Here`
-- Entity pages: `wiki/entities/entity-name.md` → `# Entity Name`
-- Concept pages: `wiki/concepts/concept-name.md` → `# Concept Name`
-- Synthesis pages: `wiki/synthesis/comparison-topic.md` → `# Comparison Topic`
+- Source pages: `wiki/sources/Article Title Here.md` → `# Article Title Here`
+- Entity pages: `wiki/entities/Entity Name.md` → `# Entity Name`
+- Concept pages: `wiki/concepts/Concept Name.md` → `# Concept Name`
+- Synthesis pages: `wiki/synthesis/Comparison Topic.md` → `# Comparison Topic`
 
-When creating `[[wikilinks]]`, use the page title (Title Case), not the filename:
+When creating `[[wikilinks]]`, use the exact page title:
 - Correct: `[[Entity Name]]`
 - Wrong: `[[entity-name]]`
 
-To slugify a title into a filename: lowercase, replace spaces with hyphens, remove special characters, trim to reasonable length.
+The filename IS the wikilink target. No aliases needed.
+
+## Language
+
+所有 wiki 页面的正文内容使用**中文**撰写。包括摘要、说明、分析、总结等。YAML frontmatter 中的 tags 和 sources 字段可保留英文。
 
 ## Image Handling
 

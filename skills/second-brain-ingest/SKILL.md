@@ -123,6 +123,8 @@ Tell the user what was done:
 - When new information contradicts existing wiki content, **update the wiki page and note the contradiction** with both sources cited.
 - **Prefer updating existing pages** over creating new ones. Only create a new page when the topic is distinct enough to warrant its own page.
 - Use `[[wikilinks]]` for all internal references. Never use raw file paths.
+- **文件名与标题统一**：文件名必须与页面 `# 标题` 完全一致，使用 Title Case（如 `Peter Dayan.md`），不用 kebab-case。`[[wikilinks]]` 直接匹配文件名。
+- **使用中文撰写**：所有 wiki 页面的正文内容、摘要、说明文字均使用中文撰写。YAML frontmatter 的 tags 和 sources 字段可保留英文。
 
 ## What's Next
 
